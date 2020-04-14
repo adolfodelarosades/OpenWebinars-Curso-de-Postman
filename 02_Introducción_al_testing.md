@@ -41,7 +41,7 @@ Los defectos tienen lugar porque las personas pueden cometer errores debido a di
 
 ### Los 7 principios del Testing
 
-* **Principio 1*: El Testing muestra la presencia de defectos: El Testing puede mostrar que la evidencia de defectos, pero no puede demostrar que estos no existan. El Testing reduce la probabilidad de defectos sin descubrir en el software pero, incluso si no se encuentran defectos, no se puede demostrar que el software esté libre de ellos.
+* **Principio 1**: El Testing muestra la presencia de defectos: El Testing puede mostrar que la evidencia de defectos, pero no puede demostrar que estos no existan. El Testing reduce la probabilidad de defectos sin descubrir en el software pero, incluso si no se encuentran defectos, no se puede demostrar que el software esté libre de ellos.
 
 * **Principio 2**: Es imposible probarlo todo: Es imposible probar todas las combinaciones de entradas y precondiciones salvo para casos triviales. En lugar de probarlo todo, se deberían establecer niveles de prioridad y análisis de riesgos para concentrar los esfuerzos en las pruebas.
 
@@ -75,9 +75,61 @@ Los defectos tienen lugar porque las personas pueden cometer errores debido a di
 
 [Niveles de pruebas](pdfs/Niveles_de_pruebas.pdf)
 
+### Pruebas de componente(unitarias)
+
+Las pruebas de componente buscan defectos y verifican la funcionalidad de módulos software, programas, objetos, clases... Para esto, se debe aislar el software bajo prueba del resto del sistema.
+
+Normalmente, las pruebas de componente requieren acceso al código bajo prueba y un entorno de desarrollo, como un framework de pruebas unitarias o una herramienta de depuración. En la práctica, involucran al programador que escribió el código.
+
+### Pruebas de integración
+
+Las pruebas de integración verifican las interfaces entre componentes, interacciones con diferentes partes del sistema e interfaces entre sistemas, puede haber más de un nivel de pruebas de integración:
+
+* **Pruebas de integración de componentes**: Ponen a prueba las interacciones entre componentes software y se realizan después de las pruebas de componente.
+
+* **Pruebas de integración de sistemas**: Verifican las interacciones entre diferentes sistemas o entre hardware y software, y se realizan después de las pruebas de sistema.
+
+### Pruebas de sistema
+
+Las pruebas de sistema verifican el comportamiento de un sistema o producto completo. En este tipo de pruebas, el entorno de pruebas debería de parecerse lo máximo posible al entorno de producción con el objetivo de minimizar el riesgo de fallos no encontrados relativos al entorno no encontrados durante la fase de pruebas.
+
+Este nivel puede albergar tanto pruebas funcionales como no funcionales y suele llevarse a cabo a través de un equipo de testers independiente.
+
+### Pruebas de aceptación
+
+Es el siguiente nivel a las pruebas de sistema. Ambos niveles están orientados a requisitos y procesos de negocio, pero el principal objetivo en las pruebas de aceptación no es encontrar defectos, sino generar confianza en el sistema o parte de éste. Estas pruebas sirven para evaluar si el sistema está listo para su uso.
+
+A diferencia de las pruebas de sistema, este tipo de pruebas suele ser responsabilidad de los clientes o usuarios de un sistema, aunque también podrían entrar en juego otras partes relacionadas (stakeholders).
+
+Existen 4 tipos:
+
+* Pruebas de aceptación de usuario
+* Pruebas operacionales
+* Pruebas de regulación y contrato
+* Alpha and beta testing
+
 ## Tipos de pruebas 5:51 
 
 [Tipos de pruebas](pdfs/Tipos_de_pruebas.pdf)
+
+### Pruebas funcionales
+
+Las pruebas funcionales verifican las funcionalidades que implementa el sistema, que pueden estar definidas como requisitos, casos de uso, especificaciones funcionales o incluso indocumentadas. Estas pruebas consideran el **comportamiento externo** del software (caja negra) y se pueden realizar en todos los niveles de pruebas.
+
+### Pruebas no funcionales
+
+Las pruebas no funcionales describen las pruebas requeridas para medir características de sistemas y software que se puedan cuantificar, como tiempos de respuesta en caso de probar el rendimiento de un sistema. Estas pruebas también consideran el **comportamiento externo** del software y se pueden realizar en todos los niveles.
+
+### Pruebas estructurales
+
+Verifican la estructura de un software o sistema (caja blanca) y se pueden realizar en todos los niveles de pruebas. Se suelen aplicar después de las técnicas basadas en especificación con el objetivo de ayudar a medir el grado de confianza en las pruebas, determinando la cobertura de pruebas sobre un tipo de estructura.
+
+### Pruebas relacionadas con cambios
+
+* **Retesting**: Pruebas para determinar si un defecto ha sido eliminado.
+
+* **Pruebas de regresión**: Pruebas para determinar si han surgido fallos inesperados como consecuencia de un cambio en el código del programa. Son las principales candidatas para la automatización de pruebas.
+
  
 ## Técnicas de caja negra o basadas en especificación 18:33 
 
