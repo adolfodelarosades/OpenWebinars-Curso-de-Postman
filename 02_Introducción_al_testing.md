@@ -55,7 +55,6 @@ Los defectos tienen lugar porque las personas pueden cometer errores debido a di
 
 * **Principio 7**: La falacia de la ausencia de errores: Encontrar y corregir defectos no sirve de mucho si el sistema no es usable y no cumple las necesidades y expectaciones de los usuarios.
 
-
 ### PROCESO FUNDAMENTAL DEL TESTING
 
 * Planificación y Control
@@ -114,11 +113,11 @@ Existen 4 tipos:
 
 ### Pruebas funcionales
 
-Las pruebas funcionales verifican las funcionalidades que implementa el sistema, que pueden estar definidas como requisitos, casos de uso, especificaciones funcionales o incluso indocumentadas. Estas pruebas consideran el **comportamiento externo** del software (caja negra) y se pueden realizar en todos los niveles de pruebas.
+**¿Qué hace el sistema?** Las pruebas funcionales verifican las funcionalidades que implementa el sistema, que pueden estar definidas como requisitos, casos de uso, especificaciones funcionales o incluso indocumentadas. Estas pruebas consideran el **comportamiento externo** del software (caja negra) y se pueden realizar en todos los niveles de pruebas.
 
 ### Pruebas no funcionales
 
-Las pruebas no funcionales describen las pruebas requeridas para medir características de sistemas y software que se puedan cuantificar, como tiempos de respuesta en caso de probar el rendimiento de un sistema. Estas pruebas también consideran el **comportamiento externo** del software y se pueden realizar en todos los niveles.
+**¿Cómo funciona el sistema?** Las pruebas no funcionales describen las pruebas requeridas para medir características de sistemas y software que se puedan cuantificar, como tiempos de respuesta en caso de probar el rendimiento de un sistema. Estas pruebas también consideran el **comportamiento externo** del software y se pueden realizar en todos los niveles.
 
 ### Pruebas estructurales
 
