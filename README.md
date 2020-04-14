@@ -34,14 +34,14 @@ Aprende las bases del testing y cómo aplicarlas para probar APIs REST con Postm
 * Técnicas de caja negra o basadas en especificación 18:33 
 * Contenido adicional 5
 
-### Introducción a las APIs REST 17m
+### 3. Introducción a las APIs REST 17m
 
 * ¿Qué es una API REST? 5:06 
 * ¿Cómo construir una petición HTTP? 5:48 
 * ¿Cómo probar servicios REST? 6:18 
 * Contenido adicional 2
 
-### Introducción a Postman 27m
+### 4. Introducción a Postman 27m
 
 * ¿Qué es Postman? 3:07 
 * Instalación y configuración de Postman 16:19 
@@ -49,46 +49,46 @@ Aprende las bases del testing y cómo aplicarlas para probar APIs REST con Postm
 * Otras alternativas para testing de APIs REST 5:37 
 * Contenido adicional 2
 
-### Colecciones y variables 48m
+### 5. Colecciones y variables 48m
 
 * Enviando nuestra primera petición con Postman 11:27 
 * ¿Qué son las colecciones? 17:42 
 * Entornos 19:04 
 * Contenido adicional 1
 
-### Automatizando pruebas 35m
+### 6. Automatizando pruebas 35m
 
 * Scripts 10:10 
 * Enlazando llamadas 13:19 
 * Collection Runner 11:37 
 * Contenido adicional 1
 
-### Documentación de APIs 31m
+### 7. Documentación de APIs 31m
 
 * La importancia de una buena documentación 12:22 
 * Introducción a Markdown 3:34 
 * Documentando un servicio en Postman 15:21 
 * Contenido adicional 1
 
-### Simulando APIs REST 27m
+### 8. Simulando APIs REST 27m
 
 * ¿Qué es un Mock y por qué puede ser útil? 9:43 
 * Creando un Mock Server 17:22 
 * Contenido adicional 1
 
-### Monitores 4m
+### 9. Monitores 4m
 
 * ¿Qué son los monitores y cómo utilizarlos? 4:04 
 * Contenido adicional 1
 
-### Newman y su línea de comandos 13m
+### 10. Newman y su línea de comandos 13m
 
 * ¿Qué es Newman? 1:48 
 * Instalación de Newman 2:33 
 * Usando Postman desde la línea de comandos 8:46 
 * Contenido adicional 1
 
-### La API de Postman 53m
+### 11. La API de Postman 53m
 
 * ¿Qué es la API de Postman? 2:34 
 * Autenticación 2:33 
@@ -101,7 +101,7 @@ Aprende las bases del testing y cómo aplicarlas para probar APIs REST con Postm
 * Importar 7:03 
 * Contenido adicional 8
 
-### Últimos pasos 9m
+### 12. Últimos pasos 9m
 
 * ¿Qué más cosas hacer con Postman? 8:34 
 * Conclusión 1:18 
