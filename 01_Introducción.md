@@ -5,7 +5,7 @@
 
 ## Presentación 6:25 
 
-[Presentación](pdfs/Presentación_del_curso.pdf)
+[Presentación](pdfs/Presentación_del_curso.pdf)
 
 Presentación del profesor y de los contenidos que se verán durante el curso.
 
@@ -15,4 +15,4 @@ Presentación del profesor y de los contenidos que se verán durante el curso.
 
 ## Contenido adicional 1
 
-[Presentación](pdfs/Presentación_del_curso.pdf)
+[Presentación](pdfs/Presentación_del_curso.pdf)
