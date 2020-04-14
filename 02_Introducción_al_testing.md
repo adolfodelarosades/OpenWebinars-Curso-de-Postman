@@ -10,7 +10,9 @@
 ## ¿Qué es el testing y por qué es necesario? (Parte I) 10:04 
 
 [¿Qué es el testing y por qué es necesario? (Parte I)](pdfs/Qué_es_el_testing_y_por_qué_es_necesario_Parte_I.pdf)
- 
+
+* **DEFECT**: Un defecto es una imperfección de un sistema o de un componente que hace que cuando este sistema o componente se ejecute falle. Cualquier imperfección en el código es un Defect.
+
 ## ¿Qué es el testing y por qué es necesario? (Parte II) 13:24 
 
 [¿Qué es el testing y por qué es necesario? (Parte II)](pdfs/Qué_es_el_testing_y_por_qué_es_necesario_Parte_II.pdf)
