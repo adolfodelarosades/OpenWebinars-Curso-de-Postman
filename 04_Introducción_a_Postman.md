@@ -79,7 +79,7 @@ La ventana de Postman se divide basicamiente en tres partes:
 * Barra de tareas.
 * Barra lateral para Historial y Colecciones.
 * Parte donde se realizan las peticiones.
-
+* Barra inferior.
 
 #### Barra de tareas.
 
@@ -160,13 +160,16 @@ La vista de las Peticiones tiene dos partes por un lado donde se hace toda la pe
 * JSON
 * Wrap Line
 
+#### Barra Inferior
 
-
-
-
-
-
-
+* Ocultar barra lateral
+* Buscar textos
+* Abrir la consola
+* Bootcamp
+* Vista Build o Browse
+* Paneles Horizontales o Verticales
+* Atajos de teclado
+* Ayudas
 
 ## Dashboard de Postman 2:22 
 
