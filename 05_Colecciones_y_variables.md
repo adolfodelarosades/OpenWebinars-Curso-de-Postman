@@ -11,9 +11,19 @@
 
 [Instalación y primeros usos de Postman](https://openwebinars.net/blog/instalacion-y-primeros-usos-de-postman/)
 
+Para realizar nuestra primera petición con Postman usaremos el API REST **Postman Echo**.
+
+https://docs.postman-echo.com/?version=latest
+
+**Postman Echo** es un servicio que puede usar para probar sus clientes REST y hacer llamadas API de muestra. Proporciona endpoints para `GET`, `POST`, `PUT`, varios mecanismos de autenticación y otros endpoints de utilidad.
+
+La documentación para los endpoints y los ejemplos de responses se pueden encontrar en https://postman-echo.com
+
+
+
 ## ¿Qué son las colecciones? 17:42 
 
-Puedes consultar la documentación oficial sobre las colecciones de Postman [aquí]. (https://learning.postman.com/docs/postman/collections/intro-to-collections/)
+Puedes consultar la documentación oficial sobre las colecciones de Postman [aquí](https://learning.postman.com/docs/postman/collections/intro-to-collections/).
 
 ## Entornos 19:04 
 
