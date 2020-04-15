@@ -15,6 +15,8 @@ Para realizar nuestra primera petición con Postman usaremos el API REST **Postm
 
 https://docs.postman-echo.com/?version=latest
 
+<img src="images/5-postman-echo.png">
+
 **Postman Echo** es un servicio que puede usar para probar sus clientes REST y hacer llamadas API de muestra. Proporciona endpoints para `GET`, `POST`, `PUT`, varios mecanismos de autenticación y otros endpoints de utilidad.
 
 La documentación para los endpoints y los ejemplos de responses se pueden encontrar en https://postman-echo.com
