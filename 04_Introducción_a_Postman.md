@@ -112,9 +112,22 @@ La ventana de Postman se divide basicamiente en tres partes:
 
 * **Enlace a nuestra cuenta**
 
+* Resumen del uso de nuestra cuenta.
+
 * **Settings**
 
-* Resumen del uso de nuestra cuenta.
+   Las Settings nos permiten configurar varios opciones para trabajar con nuestros Request.
+
+   <img src="images/4-settings.png">
+   
+   Otras cosas que podemos configurar son:
+   
+   * Temas
+   * Atajos de teclado
+   * Exportar datos
+   * Certificados
+   * Proxys
+   * Actualizaciones automaticas
 
 #### Barra lateral para Historial y Colecciones.
 
@@ -164,7 +177,7 @@ La vista de las Peticiones tiene dos partes por un lado donde se hace toda la pe
 
 * Ocultar barra lateral
 * Buscar textos
-* Abrir la consola
+* Abrir la consola: Nos permite depurar las peticiones que hagamos, nos da más información que no vemos en la vista principal.
 * Bootcamp
 * Vista Build o Browse
 * Paneles Horizontales o Verticales
