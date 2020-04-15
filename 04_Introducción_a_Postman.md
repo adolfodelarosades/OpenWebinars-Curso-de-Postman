@@ -12,7 +12,7 @@
 
 https://www.postman.com/
 
-<img src="images/4-postman.pdf">
+<img src="images/4-postman.png">
 
 Postman de una manera muy resumida se puede decir que es una **herramienta para probar APIs**, para lo cual ofrece diversias funcionalidades:
 
@@ -27,13 +27,13 @@ Postman de una manera muy resumida se puede decir que es una **herramienta para 
 
 Una herramienta para mejorar el desarrollo de la API.
 
-<img src="images/4-postman-2.pdf">
+<img src="images/4-postman-2.png">
 
 Existen diferentes opciones de planes. 
 
-<img src="images/4-precios.pdf">
+<img src="images/4-precios.png">
 
-<img src="images/4-precios-2.pdf">
+<img src="images/4-precios-2.png">
 
 ## Instalación y configuración de Postman 16:19 
 
@@ -45,7 +45,7 @@ Una vez instalada la aplicación Postman pide que nos autentiquemos, esto sirve 
 
 Una vez que carga postman se nos presenta la ventana de Bienvenida:
 
-<img src="images/4-postman-1.pdf">
+<img src="images/4-postman-3.png">
 
 Si se nos llega a perder podemos hacer que apareza con `rm ~/Library/Application\ Support/Postman/window`.
 
@@ -68,11 +68,99 @@ Postman tiene dos tipos de productos:
 * La aplicación Postman
 * Red de APIs, algo sobresaliente con respecto a otros competidores como Insomnia, soapUI, Paw o Swagger. Incluyen muchos proyectos de colecciones realizadas por gente experta para descargarse localmente gratuitamente. Podemos acceder a APIs profesionales como Paypal u otras, donde ya esta todo desarrollado simplemente para usarse.
 
-
-
-
-
 [Ventajas de Postman sobre otros entornos similares](https://openwebinars.net/blog/ventajas-postman-sobre-otros-entornos-similares/).
+
+### Ventana Postman
+
+<img src="images/4-postman-4.png">
+
+La ventana de Postman se divide basicamiente en tres partes:
+
+* Barra de tareas.
+* Barra lateral para Historial y Colecciones.
+* Parte donde se realizan las peticiones.
+
+
+#### Barra de tareas.
+
+* **Botón New**:
+
+   * Crear un **request**
+   * Crear una **colección**
+   * Crear un **environmente**
+   * Crear **documentación**
+   * Crear un **mock server**
+   * Crear un **monitor**
+   
+* **Import**: Importar elementos ya existentes.
+   
+* **Runner**: Herramienta para ejecutar una colección completa.
+
+* Abrir nuevas pestañas
+
+* **Workspace**: Seleccionar en que espacio de trabajo queremos trabajar, pueden ser Personales o de Equipo.
+
+* **Botón Sync**: Botón para sincronizar Postman, para cuando trabajamos en un espacio de trabajo y necesitamos los ultimos cambios.
+
+* **Proxies**
+
+* **Cookies**
+
+* **Documentación**: https://learning.postman.com/docs/postman/launching-postman/introduction/
+
+* **Notificaciones**
+
+* **Enlace a nuestra cuenta**
+
+* **Settings**
+
+* Resumen del uso de nuestra cuenta.
+
+#### Barra lateral para Historial y Colecciones.
+
+Podemos ver todo el historial de los request que hemos realizado organizados por fechas. También podemos construir nuestras colecciones.
+
+#### Parte donde se realizan las peticiones.
+
+* Podemos seleccionar los diferentes Métodos GET, POST, etc.
+* Podemos ingresar la URL 
+* Podemos definir los diferentes parámetros de la Request `Params`, `Authorization`, `Headers` y `Body` 
+* Podemos definir Scripts antes de la ejecución `Pre-request Script` o despues de envíar la petición `Tests`
+* Podemos definir Settings:
+   * Automatically follow redirects
+   * Follow original HTTP Method
+   * Follow Authorization header
+   * Remove referer header on redirect
+   * Encode URL automatically
+* Manejo de Cookies
+* **Code** Una de las opciones más interesantes.
+
+   En base a una Request que tengamos si pinchamos en Code automaticamente nos genera el código HTTP para ejecutarlo en otro tipo de plataformas, pero ademas de un HTTP me lo puede generar para un comando cURL, o código JS, Java, C, etc. Es una herramienta muy potente para compartir Request con gente que no utilice Postman.
+
+   <img src="images/4-postman-5.png">
+
+* Podemos comentar las peticiones
+* Podemos generar ejemplos
+
+La vista de las Peticiones tiene dos partes por un lado donde se hace toda la petición. lo que hemos explicado y la Respuesta  la cual contiene:
+
+* Body
+* Cookies
+* Headers
+* Test Result
+* Código devuelto
+* Tiempo
+* Tamaño
+* Salvar respuesta como ejemplo o como archivo
+* Vistas 
+   * Pretty
+   * Raw
+   * Preview
+   * Visualize
+* JSON
+* Wrap Line
+
+
 
 
 
