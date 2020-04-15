@@ -201,6 +201,9 @@ foo1 | bar1
 foo2 | bar2
 
 
+<img src="images/5-get-2.png">
+
+<img src="images/5-get-3.png">
 
 ## ¿Qué son las colecciones? 17:42 
 
