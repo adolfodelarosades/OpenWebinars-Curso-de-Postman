@@ -12,6 +12,8 @@
 
 https://www.postman.com/
 
+[Instalación y primeros usos de Postman](https://openwebinars.net/blog/instalacion-y-primeros-usos-de-postman/)
+
 <img src="images/4-postman.png">
 
 Postman de una manera muy resumida se puede decir que es una **herramienta para probar APIs**, para lo cual ofrece diversias funcionalidades:
@@ -201,6 +203,45 @@ Ademas puedo ver información sobre mi cuenta, que plan tengo contratado etc.
 ## Otras alternativas para testing de APIs REST 5:37 
 
 [Otras alternativas para testing de APIs REST](pdfs/Otras_alternativas.pdf)
+
+Postman no es la única alternativa para trabajar con APIs REST 
+
+* **Fiddler**
+
+   Esta es una herramienta para analizar el trafico de peticiones HTTP, pero como herramienta de Tests se queda corta. Pero es uno de los mejores para analizar el trafico y usarlo como Proxy. 
+
+* **Charles**
+
+   Muy similar a Fiddler.
+
+* **cURL**
+
+   Herramienta de las más antiguas pero también de las más utilizadas, paquete para Linux con el que podemos enviar peticiones a través de la línea de comandos a las APIs. Esto es lo que hace Newman que es uno de los plugins de Postman. El cURL se puede generar a través de Postman para compartirlo con usuarios de Linux.
+
+* **Navegadores web**
+
+   Podemos ingresar el URL del Enpoint en un navegador y nos servira para probar mi Request, ademas de que se puede usar las herramientas de desarrollador para ver los tipos de respuesta y el envio de parámetros al Endpoint, entre otras cosas.
+
+* **soapUI**
+
+   Herramienta muy antigua pero muy completa pero poco intuitiva. Muy orientada al Testing. Para complementarse necesita integrarse con otros paquetes. Creada por SMARTBEAR que es la mismi compañia que creo [Swagger](https://swagger.io/) para documetación de APIs.
+
+* **Paw (Mac)**
+
+   Versión temprana e inmadura de Postman, no implementa todo lo que hace Postman pero su interfaz es muy intuitiva.
+
+* **Assertible (Web)**
+
+   Aplicación web, que se puede ejecutar desde cualquier sitio, pero no tan completa como Postman.
+   
+* **Stoplight (Web)**
+
+   Aplicación web, que se puede ejecutar desde cualquier sitio, pero no tan completa como Postman.
+   
+* **Insomnia**
+
+   Es la alternativa más interesante y la que tiene más futuro, una interfaz muy intuitiva, permite importar/exportar plugings hechos con Node
+* ...
 
 ## Contenido adicional 2
 
