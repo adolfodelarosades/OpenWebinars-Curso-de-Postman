@@ -160,9 +160,45 @@ https://docs.postman-echo.com/?version=latest
 
 La documentación para los endpoints y los ejemplos de responses se pueden encontrar en https://postman-echo.com
 
-Para nuestro ejemplo haremos peticiones GET, POST, PUT y DELETE.
+Observe el botón `Run in Postman` si lo presionamos me incluira en el Postman local una colección llamada `Postman Echo` con 37 Request, es decir todos los ejemplos del API.
 
-#### Petición GET
+<img src="images/5-echo-1.png">
+
+### Request Methods
+
+HTTP tiene múltiples request "verbs", como `GET`, `PUT`, `POST`, `DELETE`, `PATCH`, `HEAD`, etc.
+
+Un método HTTP (verbo) define cómo un servidor debe interpretar una solicitud. Los endpoints en esta sección muestran varios verbos HTTP. Postman admite todos los verbos HTTP, incluidos algunos de uso poco frecuente, como `PROPFIND`, `UNLINK`, etc.
+
+Para obtener detalles sobre los verbos HTTP, consulte [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)
+
+
+#### GET Request
+
+<img src="images/5-get.png">
+
+https://postman-echo.com/get?foo1=bar1&foo2=bar2
+
+The HTTP GET request method is meant to retrieve data from a server. The data is identified by a unique URI (Uniform Resource Identifier).
+
+A GET request can pass parameters to the server using "Query String Parameters". For example, in the following request,
+
+El HTTP GET request method está destinado a recuperar datos de un servidor. Los datos se identifican mediante un URI (identificador uniforme de recursos) único.
+
+Una solicitud GET puede pasar parámetros al servidor utilizando "Query String Parameters". Por ejemplo, en la siguiente solicitud,
+
+http://example.com/hi/there?hand=wave
+
+El parámetro "hand" tiene el valor "wave".
+
+Este endpoint "hace eco" de los HTTP headers, los request parameters y el URI requested.
+
+PARAMS
+
+Nombre | Valor
+-------|------
+foo1 | bar1
+foo2 | bar2
 
 
 
