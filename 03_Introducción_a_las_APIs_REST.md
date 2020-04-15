@@ -124,18 +124,27 @@ El siguiente es el Endpoit de obtener un artista:
 
    Ademas de esto según la documentación de la API es necesario enviar el parámetro **Authorization** dentro de los **HEADER FIELD**.  
    
-   Dependiendo de los **Path Parameters** y los **HEADER FIELD** podremos generar diferentes casos de prueba. Un posible caso de prueba es cuando no ponemos ningún identificador, en este caso según la documetación nos debería de dar un error. Otro caso de prueba es poniendo un identificador. 
+   Dependiendo de los **Path Parameters** y los **HEADER FIELD** podremos generar diferentes casos de prueba. 
+   
+   * Un posible caso de prueba es cuando no ponemos ningún identificador, en este caso según la documetación nos debería de dar un error. 
+   * Otro caso de prueba es poner un identificador, si el identificador es correcto nos regresara la información de un artista a esto se le conoce en los test como **happy paths (tests felices)**. 
+   * Que pasa si ponemos un identificador que no corresponde a ningún artista, nos debería dar una respuesta diferente, este sería otro caso de prueba.
+   * Que pasa si en lugar de poner un identificador númerico lo ponemos como string o ponemos una cadena vacia, nos debería devolver un error.
+   
+Por lo que a la hora de probar APIs es importante conocer bien la petición, identificar las variables tanto a nivel de *Query parameters*, *Body*, *Path Parameters* o *Header* y jugar con los diferentes valores que pueden albergar esas variables ya sea evitando ponerlas, ponerlas con valores correctos, ponerlas con valores incorrectos según la lógica de negocio pero con un tipo correcto, o poniendo tipos incorrectos. Todo esto nos podria permitir crear una buena base para las pruebas de un EndPoint.
 
+Lo mismo pararía con la **Authorization**, ponerla, no ponerla, ponerla pero que no sea correcta, etc.
 
+La prueba de una API no es tan intuitiva como pronar el Frontend de un sitio Web, esto exige un estudio de la documentación, por eso la importancia de la documentación de las APIs.
 
+Resumiendo cuando vayamos a probar un servicio REST lo importante será:
 
+* Conocer bien el servicio que vamos a probar, leer la documentación.
+* Identificar todo lo que se tiene que envíar a nivel de *Query parameters*, *Body*, *Path Parameters*, *Header*, etc. 
+* Identificar que cosa son fijas y cuales variables.
+* Jugar con diferentes valores para las variables.
 
-
-
-
-
-
-
+Con todo esto tendremos diferentes casos de prueba.
 
 ## Contenido adicional 2
 
