@@ -186,6 +186,18 @@ La vista de las Peticiones tiene dos partes por un lado donde se hace toda la pe
 
 ## Dashboard de Postman 2:22 
 
+Para entrar al **Dashboard** nos logeamos en la pagina https://www.postman.com/
+
+<img src="images/4-dashboard-1.png">
+
+Es una herramienta para tener información de nuestra cuenta. Podemos ver los diferentes Workspaces Personales o de Equipo que tengamos así como crear nuevos.
+
+Si entro al único Workspace que tengo podemos ver sus diferentes Colecciones, su historial, enviroments, monitores, mocks, Integraciones y toda la Actividad que hemos realizado.
+
+<img src="images/4-dashboard-2.png">
+
+Ademas puedo ver información sobre mi cuenta, que plan tengo contratado etc.
+
 ## Otras alternativas para testing de APIs REST 5:37 
 
 [Otras alternativas para testing de APIs REST](pdfs/Otras_alternativas.pdf)
