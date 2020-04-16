@@ -216,7 +216,7 @@ Uno es para veridicar que el código de estado retornado sea 200 y el otro para 
 
 #### POST Raw Text
 
-<img src="images/5-post-3.png">
+<img src="images/5-post-1.png">
 
 El método request HTTP POST está destinado a transferir datos a un servidor (y obtener una respuesta). Los datos que se devuelven dependen de la implementación del servidor.
 
@@ -234,7 +234,170 @@ Este endpoint "hace eco" de los HTTP headers, request parameters, el contenido d
 
 BODY raw|
 --------|
-This is expected to be sent back as part of response body.|
+Se espera que esto se devuelva como parte del cuerpo de respuesta.|
+
+Vamos a probar este endpoint con Postman:
+
+https://postman-echo.com/post
+
+<img src="images/5-post-2.png">
+
+Debemos observar varias cosas en la respuesta del endpoint:
+
+* `args` lo retorna vacio por que no se han enviado parámetros(*Query params*)
+* `data` en esta petición `POST` hemos usado la parte `Body` con la opción `raw` de tipo `Text` para mandar el texto `Se espera que esto se devuelva como parte del cuerpo de respuesta.`
+* `files` objeto vacío
+* `form` objeto vacío
+* `headers` Todos los encabezados
+* `json` nulo
+* `url` URL del endpoint
+
+Este ejemplo también tiene Scripts que se ejecunten y después de la petición (Tests)
+
+<img src="images/5-post-3.png">
+
+### POST Form Data
+
+<img src="images/5-post-6.png">
+
+El HTTP POST request está destinado a transferir datos a un servidor (y obtener una respuesta). Los datos que se devuelven dependen de la implementación del servidor.
+
+Una solicitud POST puede pasar parámetros al servidor utilizando "Query String Parameters", así como el Request Body. Por ejemplo, en la siguiente solicitud,
+
+`POST /hi/there?hand=wave`
+
+El parámetro "hand" tiene el valor "wave". El request body puede estar en múltiples formatos. Estos formatos están definidos por el tipo MIME del request. El tipo MIME se puede configurar con el HTTP header `Content-Type`. Los tipos MIME más utilizados son:
+
+* `multipart/form-data`
+* `application/x-www-form-urlencoded`
+* `aplication/json`
+
+Este endpoint "hace eco" de los HTTP headers, request parameters, el contenido del request body y el URI requested entero cuando data es enviado como form parameter.
+
+BODY urlencoded |&nbsp;
+----------------|-
+foo1 | bar1
+foo2 | bar2
+
+Vamos a probar este endpoint con Postman:
+
+https://postman-echo.com/post
+
+<img src="images/5-post-4.png">
+
+Debemos observar varias cosas en la respuesta del endpoint:
+
+* `args` objeto vacío
+* `data` cadena vacía 
+* `files` objeto vacío
+* `form` objeto con los parámetros que se mandarón en el **Body** en la sección **x-www-form-urlencoded** que simula un formulario HTMLT 
+* `headers` Todos los encabezados
+* `json` objeto con los parámetros enviados con **x-www-form-urlencoded**
+* `url` URL del endpoint
+
+Este ejemplo también tiene Scripts que se ejecunten y después de la petición (Tests)
+
+<img src="images/5-post-5.png">
+
+### PUT Request
+
+<img src="images/5-put-1.png">
+
+El método HTTP PUT request es similar a HTTP POST. También está destinado a transferir datos a un servidor (y obtener una respuesta). Los datos que se devuelven dependen de la implementación del servidor.
+
+Una solicitud PUT puede pasar parámetros al servidor utilizando "Query String Parameters", así como el Request Body. Por ejemplo, en la siguiente raw HTTP request,
+
+`PUT /hi/there?hand=wave`
+
+BODY raw|
+--------|
+Se espera que esto se devuelva como parte del cuerpo de respuesta.|
+
+Vamos a probar este endpoint con Postman:
+
+https://postman-echo.com/put
+
+<img src="images/5-put-2.png">
+
+Debemos observar varias cosas en la respuesta del endpoint:
+
+* `args` lo retorna vacio por que no se han enviado parámetros(*Query params*)
+* `data` en esta petición `POST` hemos usado la parte `Body` con la opción `raw` de tipo `Text` para mandar el texto `Se espera que esto se devuelva como parte del cuerpo de respuesta.`
+* `files` objeto vacío
+* `form` objeto vacío
+* `headers` Todos los encabezados
+* `json` nulo
+* `url` URL del endpoint
+
+Este ejemplo también tiene Scripts que se ejecunten y después de la petición (Tests)
+
+<img src="images/5-put-3.png">
+
+### PATCH Request
+
+<img src="images/5-patch-1.png">
+
+https://postman-echo.com/patch
+
+El método HTTP PATCH se usa para actualizar recursos en un servidor. El uso exacto de las solicitudes PATCH depende del servidor en cuestión. Hay una serie de implementaciones de servidor que manejan PATCH de manera diferente. Técnicamente, PATCH admite `Query String parameters` y `Request Body`.
+
+Este endpoint acepta una HTTP PATCH request y proporciona información de depuración, como HTTP headers, Query String arguments, y el Request Body.
+
+BODY raw|
+--------|
+Se espera que esto se devuelva como parte del cuerpo de respuesta.|
+
+Vamos a probar este endpoint con Postman:
+
+https://postman-echo.com/patch
+
+<img src="images/5-patch-2.png">
+
+Debemos observar varias cosas en la respuesta del endpoint:
+
+* `args` lo retorna vacio por que no se han enviado parámetros(*Query params*)
+* `data` hemos usado la parte `Body` con la opción `raw` de tipo `Text` para mandar el texto `Se espera que esto se devuelva como parte del cuerpo de respuesta.`
+* `files` objeto vacío
+* `form` objeto vacío
+* `headers` Todos los encabezados
+* `json` nulo
+* `url` URL del endpoint
+
+Este ejemplo también tiene Scripts que se ejecunten y después de la petición (Tests)
+
+<img src="images/5-patch-3.png">
+
+### DEL DELETE Request
+
+<img src="images/5-delete-1.png">
+
+El método HTTP DELETE se usa para eliminar recursos en un servidor. El uso exacto de las solicitudes DELETE depende de la implementación del servidor. En general, las solicitudes DELETE admiten tanto los `Query String parameters` como `Request Body`.
+
+Este endpoint acepta una solicitud HTTP DELETE y proporciona información de depuración, como los HTTP headers, Query String arguments, y el Request Body.
+
+BODY raw|
+--------|
+Se espera que esto se devuelva como parte del cuerpo de respuesta.|
+
+Vamos a probar este endpoint con Postman:
+
+https://postman-echo.com/delete
+
+<img src="images/5-delete-2.png">
+
+Debemos observar varias cosas en la respuesta del endpoint:
+
+* `args` lo retorna vacio por que no se han enviado parámetros(*Query params*)
+* `data` hemos usado la parte `Body` con la opción `raw` de tipo `Text` para mandar el texto `Se espera que esto se devuelva como parte del cuerpo de respuesta.`
+* `files` objeto vacío
+* `form` objeto vacío
+* `headers` Todos los encabezados
+* `json` nulo
+* `url` URL del endpoint
+
+Este ejemplo también tiene Scripts que se ejecunten y después de la petición (Tests)
+
+<img src="images/5-delete-3.png">
 
 ## ¿Qué son las colecciones? 17:42 
 
