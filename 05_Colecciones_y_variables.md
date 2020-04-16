@@ -172,16 +172,7 @@ Un método HTTP (verbo) define cómo un servidor debe interpretar una solicitud.
 
 Para obtener detalles sobre los verbos HTTP, consulte [RFC 2616](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9)
 
-
 #### GET Request
-
-<img src="images/5-get.png">
-
-https://postman-echo.com/get?foo1=bar1&foo2=bar2
-
-The HTTP GET request method is meant to retrieve data from a server. The data is identified by a unique URI (Uniform Resource Identifier).
-
-A GET request can pass parameters to the server using "Query String Parameters". For example, in the following request,
 
 El HTTP GET request method está destinado a recuperar datos de un servidor. Los datos se identifican mediante un URI (identificador uniforme de recursos) único.
 
@@ -191,19 +182,59 @@ http://example.com/hi/there?hand=wave
 
 El parámetro "hand" tiene el valor "wave".
 
-Este endpoint "hace eco" de los HTTP headers, los request parameters y el URI requested.
+<img src="images/5-get.png">
 
-PARAMS
+El URL que usarmos para el método `GET` es:
 
-Nombre | Valor
--------|------
-foo1 | bar1
-foo2 | bar2
+https://postman-echo.com/get?foo1=bar1&foo2=bar2
 
+Este URL esta formado de:
+
+* Protocolo `https`
+* Host `postman-echo.com`
+* Path parameters `/get`
+* Query params `?foo1=bar1&foo2=bar2` (*Podrimos poner cualquier nombre y valor que queramos.*
+   
+   PARAMS
+
+   Nombre | Valor
+   -------|------
+   foo1 | bar1
+   foo2 | bar2
+
+Este endpoint "hace eco" de los request parameters(*Query params*), los HTTP headers y el URI requested.
 
 <img src="images/5-get-2.png">
 
+Vemos que dentro de **args** nos regresa los parámetros(*Query params*) que nosotros enviamos, dentro de **headers** nos regreasa los HTTP headers y en **url** regresa el URI requested. 
+
+Este ejemplo también tiene Scripts que se ejecunten y después de la petición (Tests)
+
 <img src="images/5-get-3.png">
+
+Uno es para veridicar que el código de estado retornado sea 200 y el otro para que verifique que lo que responde sea un JSON. Ambos tests los pasa satisfactoriamente.
+
+#### POST Raw Text
+
+<img src="images/5-post-3.png">
+
+El método request HTTP POST está destinado a transferir datos a un servidor (y obtener una respuesta). Los datos que se devuelven dependen de la implementación del servidor.
+
+Una solicitud POST puede pasar parámetros al servidor utilizando "Query String Parameters", así como el Request Body. Por ejemplo, en la siguiente solicitud,
+
+`POST /hi/there?hand=wave`
+
+El parámetro "hand" tiene el valor "wave". El request body puede estar en múltiples formatos. Estos formatos están definidos por el tipo MIME del request. El tipo MIME se puede configurar con el HTTP header `Content-Type`. Los tipos MIME más utilizados son:
+
+* `multipart/form-data`
+* `application/x-www-form-urlencoded`
+* `aplication/json`
+
+Este endpoint "hace eco" de los HTTP headers, request parameters, el contenido del request body y el URI requested entero.
+
+BODY raw|
+--------|
+This is expected to be sent back as part of response body.|
 
 ## ¿Qué son las colecciones? 17:42 
 
