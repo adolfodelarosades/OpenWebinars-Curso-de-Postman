@@ -403,6 +403,35 @@ Este ejemplo también tiene Scripts que se ejecunten y después de la petición 
 
 Puedes consultar la documentación oficial sobre las colecciones de Postman [aquí](https://learning.postman.com/docs/postman/collections/intro-to-collections/).
 
+Una **Colección** es una agrupación de peticiones.
+
+Para trabajar con estos ejemplos sobre colecciones usaremos el API REST **THE RICK AND MORTY API**.
+
+https://rickandmortyapi.com/
+
+<img src="images/5-ricky.png">
+
+Es una API publica no se necesita autenticación para acceder a ella. Trabaja tanto **REST** como **GraphQL** el cual es otro protocolo de desarrollo más moderno para implementar APIs. 
+
+Esta API tiene endpoints para tres modulos principales **Character**, **Location** y **Episode**. Los tres modulos tienen la misma estructura de 5 endpoints:
+
+* Explicación del Modelo (schema).
+* Recuperar todos los elementos
+* Recuperar un simple elemento
+* Recuperar multiples elementos
+* Filtros que usan Query parameters
+
+Vamos a trabajar sobre **Character** creando nuestra colección.
+
+
+
+
+
+
+
+
+
+
 ## Entornos 19:04 
 
 Puedes consultar la documentación oficial sobre los entornos de Postman [aquí](https://learning.postman.com/docs/postman/variables-and-environments/variables/).
